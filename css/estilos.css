@@ -25,13 +25,21 @@
 }
 
 .jumbotron {
-    height: 625px;
+    /* height: 625px; */
+    /* height: auto; */
     width: 100%;
     background-image: url(../images/2480X1000_molfetta_Inicio.webp);
     background-size: cover;
     background-position: center;
 }
 
+h1{
+    font-size: medium;
+}
+
+h4{
+    font-size: medium;
+}
 
 .call{
     color: white;
@@ -45,11 +53,11 @@
 }
 
 .call p{
-    font-size: small;;
+    font-size: x-small;;
 }
 
 .call p::first-letter{
-    font-size: large;
+    font-size: small;
 }
 
 .call span {
@@ -63,32 +71,32 @@
     padding: 10px 20px;
     text-transform: capitalize;
     border-radius: 10px;
+    font-size: small;
 }
 
 .call a:hover{
     box-shadow: 0 0 5px 5px white    
 }
 
-
 .historia{
     color: white;
-    width: 45%;
+    width: 90%;
     border: 3px solid blue;
     margin: 10px;
     float: left;
     padding: 15px;
     background-color: rgb(0,0,0,0.4);
     border-radius: 15px;
-    margin-bottom: 100px !important;
 }
+
 .historia p{
     color: white;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: x-small;
 }
 
 .historia p::first-letter{
-    font-size: large;
+    font-size: small;
 }
 
 .historia p span {
@@ -99,74 +107,73 @@
     background-color: blue;
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-transform: capitalize;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-size: small;
 }
 
 .historia a:hover{
     box-shadow: 0 0 5px 5px white 
 }
 
+
 .nright{
     margin: 10px;
     padding: 15px;
-    background-image: url(../images/molfetta-ciudad-historica.JPG);
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 200px;
 }
 
 .nright:hover{
-    box-shadow: 0 0 5px 5px white;
-    transform: scale(1.10); 
+    box-shadow: 0 0 3px 3px white;  
+    transform: scale(1.05); 
 }
 
 
 .nright1{
     margin: 10px;
     padding: 15px;
-    background-image: url(../images/molfetta-porto.jpg);
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 200px;
 }
 
 .nright1:hover{
-
-    box-shadow: 0 0 5px 5px white;
-    transform: scale(1.10); 
+    box-shadow: 0 0 3px 3px white; 
+    transform: scale(1.05); 
 }
 
 .ubicacion{
     color: white;
-    width: 40%;
     border: 3px solid blue;
-    margin: 10px;
+    margin: 5px;
     float: left;
-    padding: 20px;
+    padding: 15px;
     background-color: rgb(0,0,0,0.4);
-    background-size: cover;
     border-radius: 15px;
+    margin-bottom: 100px !important; 
 }
 
 .ubicacion p{
     color: white;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: x-small;
 }
 
 .ubicacion p::first-letter{
-    font-size: large;
+    font-size: small;
 }
 
 .ubicacion a{
     background-color: blue;
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-transform: capitalize;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-size: small;
 }
 
 .ubicacion a:hover{
@@ -191,14 +198,13 @@
 
 .italia {
     color: white;
-    width: 33%; 
+    width: 30%; 
     border: 3px solid blue;
     margin: 3px;
     float: right;
     padding: 3px;
     background-color: rgb(6, 6, 143,0,0,7);
     border-radius: 10px;
-
 }
 
 .italia:hover{
@@ -206,58 +212,50 @@
     transform: scale(1.10);   
 }
 
-.ubicacion iframe{
-    color: white;
-    width: 100%;
-    border: 3px solid blue;
-    margin: 3px;
-    float: center;
-    padding: 3px;
-    background-color: rgb(6, 6, 143,0,0,7);
-    border-radius: 15px;
-}
-
 .ubicacion iframe:hover{
-    box-shadow: 0 0 10px 10px white
-}
+    box-shadow: 0 0 5px 5px white
+} 
 
 .uright{
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     background-size: cover;
     background-position: center;
-    height: auto; 
+    height: 300px;
+    width: 30%; 
 }
 
 .uright:hover{
-    box-shadow: 0 0 5px 5px white;
+    /* box-shadow: 0 0 5px 5px white; */
     transform: scale(1.01);
 }
 
 .turismo{
     color: white;
-    width: 40%;
     border: 3px solid blue;
     margin: 10px;
+    margin: 5px;
     float: left;
-    padding: 20px;
+    padding: 15px;
     background-color: rgb(0,0,0,0.4);
     border-radius: 15px;
+    margin-bottom: 120px !important; 
 }
 
 .turismo p{
     color: white;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: x-small;
 }
 
 .turismo a{
     background-color: blue;
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-transform: capitalize;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-size: small;    
 }
 
 .turismo a:hover{
@@ -266,15 +264,16 @@
 
 .tright{
     margin: 10px;
+    margin: 5px;
     padding: 10px;
     background-size: cover;
     background-position: center;
-    height: 520px; 
+    height: auto; 
 }
 
-.tright:hover{
+/* .tright:hover{
     box-shadow: 0 0 5px 5px white;
-}
+} */
 
 .informacion{
     color: white;
@@ -282,21 +281,20 @@
     border: 3px solid blue;
     margin: 10px;
     float: left;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(0,0,0,0.4);
     border-radius: 15px;
-}
+    font-size: x-small;
 
-.informacion form:hover{
-    padding: 10px;
-    box-shadow: 0 0 3px 3px white;
 }
 
 .informacion p{
     color: white;
     margin-bottom: 20px;
-    font-size: small;
-    
+}
+
+.form-control {
+    font-size: x-small;
 }
 
 .form-control:focus{
@@ -304,7 +302,7 @@
 }
 
 .consulta{
-    width: 1000px !important;
+    width: auto !important;
 }
 
 .form-control{
@@ -315,13 +313,15 @@
     background-color: blue;
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 10px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: small;
 }
 
 .boton:hover{
     box-shadow: 0 0 5px 5px white
-}
+} 
 
 footer{
     background-color:#000;
@@ -331,8 +331,8 @@ footer{
 }
 
 footer p{
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 5px;
     padding: 10px;
 }
 
@@ -342,8 +342,8 @@ footer p{
 
 .redes a i{
     color: blue;
-    font-size: 50px;
-    letter-spacing: 30px;
+    font-size: 30px;
+    letter-spacing: 20px;
 }
 
 .redes a i:hover{
