@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   background-color: blue;
 }
@@ -50,19 +55,12 @@ h4 {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
 }
-
 .call p {
   font-size: x-small;
 }
-
-.call p::first-letter {
-  font-size: small;
-}
-
 .call span {
   font-style: oblique;
 }
-
 .call a {
   background-color: blue;
   color: white;
@@ -70,6 +68,10 @@ h4 {
   padding: 10px 20px;
   text-transform: capitalize;
   border-radius: 10px;
+  font-size: small;
+}
+
+.call p::first-letter {
   font-size: small;
 }
 
@@ -87,21 +89,11 @@ h4 {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
 }
-
 .historia p {
   color: white;
   margin-bottom: 20px;
   font-size: x-small;
 }
-
-.historia p::first-letter {
-  font-size: small;
-}
-
-.historia p span {
-  font-style: oblique;
-}
-
 .historia a {
   background-color: blue;
   color: white;
@@ -112,34 +104,42 @@ h4 {
   font-size: small;
 }
 
+.historia p::first-letter {
+  font-size: small;
+}
+
+.historia p span {
+  font-style: oblique;
+}
+
 .historia a:hover {
   box-shadow: 0 0 5px 5px white;
 }
 
 .nright {
-  margin: 10px;
-  padding: 15px;
+  margin: 5px;
+  padding: 10px;
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .nright:hover {
-  box-shadow: 0 0 3px 3px white;
-  transform: scale(1.05);
+  box-shadow: 0 0 2px 2px white;
+  transform: scale(1.02);
 }
 
 .nright1 {
-  margin: 10px;
-  padding: 15px;
+  margin: 5px;
+  padding: 10px;
   background-size: cover;
   background-position: center;
   height: 200px;
 }
 
 .nright1:hover {
-  box-shadow: 0 0 3px 3px white;
-  transform: scale(1.05);
+  box-shadow: 0 0 2px 2px white;
+  transform: scale(1.02);
 }
 
 .ubicacion {
@@ -152,17 +152,11 @@ h4 {
   border-radius: 15px;
   margin-bottom: 100px !important;
 }
-
 .ubicacion p {
   color: white;
   margin-bottom: 20px;
   font-size: x-small;
 }
-
-.ubicacion p::first-letter {
-  font-size: small;
-}
-
 .ubicacion a {
   background-color: blue;
   color: white;
@@ -173,7 +167,15 @@ h4 {
   font-size: small;
 }
 
+.ubicacion p::first-letter {
+  font-size: small;
+}
+
 .ubicacion a:hover {
+  box-shadow: 0 0 5px 5px white;
+}
+
+.ubicacion iframe:hover {
   box-shadow: 0 0 5px 5px white;
 }
 
@@ -207,10 +209,6 @@ h4 {
   transform: scale(1.1);
 }
 
-.ubicacion iframe:hover {
-  box-shadow: 0 0 5px 5px white;
-}
-
 .uright {
   margin: 5px;
   margin-bottom: 20px;
@@ -236,13 +234,11 @@ h4 {
   border-radius: 15px;
   margin-bottom: 120px !important;
 }
-
 .turismo p {
   color: white;
   margin-bottom: 20px;
   font-size: x-small;
 }
-
 .turismo a {
   background-color: blue;
   color: white;
@@ -277,7 +273,6 @@ h4 {
   border-radius: 15px;
   font-size: x-small;
 }
-
 .informacion p {
   color: white;
   margin-bottom: 20px;
@@ -319,7 +314,6 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 footer p {
   font-size: 15px;
   margin-bottom: 5px;
@@ -329,7 +323,6 @@ footer p {
 .redes a {
   text-decoration: none;
 }
-
 .redes a i {
   color: blue;
   font-size: 30px;
