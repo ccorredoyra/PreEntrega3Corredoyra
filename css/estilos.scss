@@ -6,6 +6,8 @@ $colorBorde: blue;
 $colorRedes: blue;
 $colorSombra: white;
 $fontNav: 'Protest Riot', sans-serif;
+$fontSizeNav: xx-large;
+$colorBoton: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
 
 
 
@@ -16,13 +18,12 @@ $fontNav: 'Protest Riot', sans-serif;
 }
 
 .navbar{
-    background-color: $colorFondo;    
-
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
 }
 .navbar-brand{
     color: white !important;
     font-family: $fontNav;
-    font-size: xx-large;
+    font-size: $fontSizeNav;
     text-shadow: 0 0 20px 20px black;
 }
 .navbar-brand img{
@@ -65,7 +66,7 @@ h4{
         font-style: oblique;
     }
     a{
-    background-color: $colorFondo;
+    background-image: $colorBoton; 
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -100,7 +101,8 @@ h4{
     }
 
     a{
-        background-color: $colorFondo;
+        // background-color: $colorFondo;
+        background-image: $colorBoton;
         color: white;
         text-decoration: none;
         padding: 10px 20px;
@@ -164,9 +166,8 @@ h4{
         margin-bottom: 20px;
         font-size: x-small;
     }
-
     a{
-        background-color: $colorFondo;
+        background-image: $colorBoton;
         color: white;
         text-decoration: none;
         padding: 10px 20px;
@@ -176,20 +177,15 @@ h4{
     }
 
 }
-
-
 .ubicacion p::first-letter{
     font-size: small;
 }
-
 .ubicacion a:hover{
     box-shadow: 0 0 5px 5px $colorSombra;    
 }
-
 .ubicacion iframe:hover{
     box-shadow: 0 0 5px 5px $colorSombra;
 } 
-
 .europa {
     color: white;
     width: 40%; 
@@ -248,7 +244,7 @@ h4{
         font-size: x-small;
     }
     a{
-        background-color: $colorFondo;
+        background-image: $colorBoton;
         color: white;
         text-decoration: none;
         padding: 10px 20px;
@@ -260,9 +256,7 @@ h4{
 .turismo a:hover{
     box-shadow: 0 0 5px 5px $colorSombra;    
 }
-
 .tright{
-    margin: 10px;
     margin: 5px;
     padding: 10px;
     background-size: cover;
@@ -297,7 +291,7 @@ h4{
     padding: 5px !important;
 }
 .boton{
-    background-color: $colorFondo;
+    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
     color: white;
     text-decoration: none;
     padding: 10px 10px;
@@ -312,41 +306,3 @@ h4{
 @import "_footer.scss";
 @import "_redes.scss";
 @import "_subir.scss";
-
-
-// footer{
-//     background-color:#000;
-//     color: white;
-//     padding: 20px;
-//     text-align: center;
-//     p{
-//         font-size: 15px;
-//         margin-bottom: 5px;
-//         padding: 10px;
-//     }
-// }
-// .redes a{
-//     text-decoration: none;
-//     i{
-//         color: $colorRedes;
-//         font-size: 30px;
-//         letter-spacing: 20px;
-//     }
-// } 
-// .redes a i:hover{
-//     color: rgb(130, 238, 236);
-// }
-// .subir{
-//     height: 25px;
-//     width: 25px;
-//     color: #f5f0f0;
-//     position: fixed;
-//     right: 10px;
-//     bottom: 10px; 
-//     font: size 15px;
-//     text-align: center;
-//     line-height: 25px;
-//     border-radius: 10px;
-//     border-radius: 5px;
-//     box-shadow: 0 0 3px 3px $colorSombra;
-// }
