@@ -274,7 +274,7 @@ h4 {
 }
 .informacion p {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .form-control {
@@ -282,7 +282,7 @@ h4 {
 }
 
 .form-control:focus {
-  box-shadow: 0 0 5px 5px rgb(104, 215, 249);
+  box-shadow: 0 0 5px 5px rgb(104, 215, 249) !important;
 }
 
 .consulta {

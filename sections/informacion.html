@@ -41,34 +41,33 @@
             </ul>
           </div>
         </div>
-      </nav>
-      <!--jumbotron inicia-->
-    <!-- <div class="p-1 bg-primary jumbotron"> -->
+    </nav>
+    <!--jumbotron inicia-->
     <div class="p-1 jumbotron">  
         <div class="container-fluid">
             <div class="row">
                 <div class="nLeft col-sm-5 informacion">
                   <h1>Solicitud de información.</h1>
-                  <p>Complete los datos solicitados para poder enviar a su casilla de correo toda la información necesaria para que pueda conocer este maravilloso lugar frente al mar Adriático y degustar su exquisita cocina. </p>
+                  <p>Complete los datos solicitados para poder enviar a su casilla de correo toda la información necesaria para que pueda conocer este maravilloso lugar frente al mar Adriático y degustar su exquisita cocina.</p>
                   <h4>También podemos enviarle información de los lugares turísticos más cercanos a Molfetta: </h4>
-                  
-                  <p>Al Sur: Giovinazzo, Bari, Mola di Bari, Polignano a Mare, Monopoli, Trani, Albarobelo, Locorotondo, etc.
-                    <br>
-                     Al Norte: Bisceglie, Trani, Barletta, etc.
-                     <br>
+                  <p>Al Sur: Giovinazzo, Bari, Mola di Bari, Polignano a Mare, Monopoli, Trani, Albarobelo, Locorotondo, etc. <br>
+                     Al Norte: Bisceglie, Trani, Barletta, etc. <br>
                      Al Oeste: Gravinia in Puglia, Matera, Altamura, etc.
                   </p>
                 </div>
             </div>
+        </div>    
         <div class="container-fluid">
           <div class="row">
             <div class="nleft col-sm-5 informacion">
-              <form action="enviar.php" method="post" enctype="text/plain">
+              <form action="/action_page.php" class="was-validated">
                 <div class="mb-2 row">
                   <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese el nombre" value="" required>
-                    </div>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  </div>
                 </div>
                 <div class="mb-2 row">
                   <label for="inputApellido" class="col-sm-2 col-form-label">Apellido</label>
@@ -88,7 +87,7 @@
                     <input type="date" class="form-control" id="inputFNacimiento" required>
                   </div>
                 </div>
-                  <div class="mb-2 row">
+                <div class="mb-2 row">
                     <label for="inputConsulta" class="col-sm-2 col-form-label">Consulta</label>
                     <div class="col-sm-2">
                       <div class="form-floating consulta">
@@ -96,24 +95,16 @@
                         <label for="floatingTextarea2">Comments</label>
                       </div>
                     </div>
-                  </div>
-                  <div>
+                </div>
+                <div>
                     <button type="submit" class="btn btn-primary btn-sm boton">Enviar</button>
-                    <button type="reset" class="btn btn-secondary btn-sm boton">Borrar</button>
-                  </div>  
-                  
-                  </div>
-                </div>    
-            </form> 
-            </div>
-          </div>
-        </div>
-  
-          </div>
-     </div>     
-      
-
-      </div>
+                    <button type="reset" class="btn btn-secondary btn-sm boton">Borrar</button> 
+                </div>  
+             </form> 
+           </div>
+         </div>
+       </div>
+    </div>
     <!--jumbotron termina-->
   
     <footer>
@@ -132,8 +123,8 @@
                 <i class="fa-brands fa-whatsapp" ></i>
             </a>
         </div>
-
     </footer>
+
     <a href="#" class="subir">
         <i class="fa-solid fa-upload"></i>
     </a>
