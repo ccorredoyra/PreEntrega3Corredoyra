@@ -1,37 +1,18 @@
 <?php
-
-error_reporting(E_ALL);
-ini_set('display_errors', TRUE);
-ini_set('display_startup_errors', TRUE);
-date_default_timezone_set('America/Mexico_City');
-
-header("application/json; charset=utf-8");  
-header("Cache-Control: no-cache");
-
-$data =$_POST['data'];
-
-function sendMail($data){
-	parse_str($data);
-// Para enviar un correo HTML mail, la cabecera Content-type debe fijarse
-$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-$cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-
-// Cabeceras adicionales
-$cabeceras .= 'To: '.utf8_decode('Info Logydes').' <info@logydes.com.mx>'. "\r\n";
-$cabeceras .= utf8_decode('From: PlatSource <noreplay@tecnointel.mx>') . "\r\n";
-$cabeceras .= 'Cc: manager@logydes.com.mx' . "\r\n";
-$titulo = utf8_decode("Recuperar password");
-//mail("dc@tabascoweb.com",$titulo,"Jorge, se agregó la solicitud:".$cfolio." al sistema, realizado el día ".$fecha,$cabeceras);
-
-mail($email0,$titulo,"Estimado $email0, para recuperar tu password haz click aquí ",$cabeceras);
-
+if (isset($_POST['enviar'])){
+    if(!empty($_POST['email'])){
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $asunto = 'Información sobre Molfetta.'
+        $msg = 'Enviamos información para que pueda disfrutar este hermoso lugar.'
+        $email = $_POST['email'];
+        $header = "From: noreply@example.com" . "\r\n";
+        $header.= "Reply-to: noreply@example.com" . "\r\n";
+        $header.= "X-Mailer: PHP/". phpversion();
+        $mail = @mail($email0,$asunto,$msg,$header);
+        if ($mail){
+            echo "<h4> Mail enviado exitosamente ! </h4>";
+        }
+    }
 }
-
-sendMail($data);
-
-$ret = array();
-$ret[0]->msg =  "OK";
-$m = json_encode($ret);
-echo $m;
-
 ?>
